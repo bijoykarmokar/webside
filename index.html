@@ -35,12 +35,14 @@
   </ul>  
 </nav>
     <!-- this is heading tag -->
+     <section>
     <h1>My name is Bijoy karmokar</h1>    
     <h2>My name is Bijoy karmokar</h2>    
     <h3>My name is Bijoy karmokar</h3>    
     <h4>My name is Bijoy karmokar</h4>    
     <h5>My name is Bijoy karmokar</h5>    
     <h6>My name is Bijoy karmokar</h6>
+  </section>
      <!-- heading tag end     -->
      <!-- this is horizantal tag -->
      <hr>
@@ -78,7 +80,7 @@
 </dl>
 </section>
 <!-- this is progress bar -->
- <h3>skill progress</h3>
+ <h2>skill progress</h2>
  <label for="html">Html:</label>
  <progress></progress><br>
  <label for="css">CSS:</label>
@@ -95,28 +97,52 @@
     </ul>
 </section>
 <!-- This is a form tag -->
-<section>
+<section class="Fromfillup">
 <h2><u>Enter your Information please</u></h2>
 <form>
+ <!-- This is a fieldset  -->
+  <fieldset>
+    <legend>Personal information</legend>
+    <div>
+      <label for="Username">Name :</label>
+      <input type="text" id="Username" name="Username" placeholder="Enter your name" required>
+    </div>
+    <div>
+      <label for="Useremail">Email :</label>
+      <input type="email" id="Useremail" name="Useremail" placeholder="Enter your email" required>
+    </div>
+    <div>
+      <label for="Userpassword">Password :</label>
+      <input type="password" id="Userpassword" name="Userpassword" placeholder="Enter your password" required>
+    </div>
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" placeholder="Enter your name" required>
+    </div>
+    <div>
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time">
+    </div>
+  </fieldset>
   <div>
-    <label for="Username">Name :</label>
-    <input type="text" id="Username" name="Username" placeholder="Enter your name" required>
+    <label for="favourite color">Favourite color:</label>
+    <input type="color" id="favourite color" value="#ff0000" required>
   </div>
   <div>
-    <label for="Useremail">Email :</label>
-    <input type="email" id="Useremail" name="Useremail" placeholder="Enter your email" required>
+    <label for="experimence">Experimence:</label>
+    <input type="range" id="experimence" name="experimence" min="0" max="10" required>
   </div>
   <div>
-    <label for="Userpassword">Password :</label>
-    <input type="pass" id="Userpassword" name="Userpassword" placeholder="Enter your password" required>
+    <label for="Programing">Programing:</label>
+    <input list="language" id="Programing" name="Programing"required>
+    <datalist id="language"> 
+      <option value="c">
+      <option value="c++">
+      <option value="Python">
+      <option value="Java">
+      <option value="Javascript">
+    </datalist>
   </div>
-  <div>
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob" placeholder="Enter your name" required>
-  </div>
-  <div>
-    <label for="time">Time:</label>
-    <input type="time" id="time" name="time">
   </div>
   <div>
     <label for="age">Userage:</label>
@@ -128,7 +154,7 @@
   </div>
   <div>
   <label for="subject">Subject:</label>
-<select value="Subject" name="subject">
+<select value="Subject">
 <option value="Bangla">Bangla</option>
 <option value="English">English</option>
 <option value="Mathematies">Mathematics</option>
